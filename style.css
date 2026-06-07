@@ -1,3 +1,7 @@
+body{
+    background-color:bisque;
+    font-size:large;
+}
 *{
     margin:0;
     padding:0;
@@ -31,7 +35,7 @@ nav ul li{
 /* Hero */
 .hero{
     background-color: #f5efe6;
-    text-align: center;
+    text-align:center;
     padding:100px 20 px;
 }
 .hero h2{
@@ -51,4 +55,71 @@ nav ul li{
     font-size: 16px;
     cursor:pointer;
     border-radius: 5px;
+}
+/* Menu*/
+.menu{
+    padding: 60px 40 px;
+    background-color: #fff;
+    text-align: center;
+}
+.menu h2{
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+.menu-grid{
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu-item{
+    background-color: #f5efe5;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 200px;
+}
+.menu-item h3{
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+.menu-item p{
+    color: #666;
+}
+
+/*About*/
+.about{
+    padding: 60px 40px;
+    background-color: #1a1a1a;
+    text-align: center;
+    color:white;
+}
+.about h2{
+    font-size: 32px;
+    margin-bottom:15px;
+    color:#e8b86d;
+}
+/*Contact*/
+.contact{
+    padding: 60px 40px;
+    text-align: center;
+    background-color:#f5efe6;    
+}
+.contact h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:lightseagreen;
+}
+.contact p{
+    font-size: 18px;
+    margin: 8px 0;
+    color: #555;
+}
+/* Footer*/
+.footer{
+    background-color: #1a1a1a;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
 }
