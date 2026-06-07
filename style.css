@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#333;
+}
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding:15px 40px;
+}
+nav h1{
+    color:#e8b86d;
+    font-size: 24px;
+}
+nav ul{
+    list-style:none;
+    display: flex;
+    gap:28px;
+}
+nav ul li{
+    color:white;
+    cursor:pointer;
+}
+/* Hero */
+.hero{
+    background-color: #f5efe6;
+    text-align: center;
+    padding:100px 20 px;
+}
+.hero h2{
+    font-size: 42px;
+    color:#1a1a1a;
+    margin-bottom: 15px;
+}
+.hero p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+.hero button{
+    background-color: #e8b86d;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 5px;
+}
