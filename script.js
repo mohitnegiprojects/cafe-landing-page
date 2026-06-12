@@ -28,4 +28,4 @@ formbutton.addEventListener('submit',function(e){
     e.preventDefault();
     document.getElementById('formMsg').style.display = "block";
     this.reset();
-})
+});
