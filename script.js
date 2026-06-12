@@ -21,3 +21,11 @@ themebtn.addEventListener('click',function(){
         themebtn.textContent = "🌙Switch to Night Mode";
     }
 });
+
+//Form 
+ const formbutton = document.getElementById('contactForm');
+formbutton.addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('formMsg').style.display = "block";
+    this.reset();
+})
