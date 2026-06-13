@@ -77,6 +77,10 @@ nav ul li{
     cursor:pointer;
 }
 /* Hero */
+body.night-mode #cafe-status{
+    font-weight: bold;
+}
+
 .hero{
     background-color: #f5efe6;
     text-align:center;

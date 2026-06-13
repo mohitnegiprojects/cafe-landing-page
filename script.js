@@ -29,3 +29,20 @@ formbutton.addEventListener('submit',function(e){
     document.getElementById('formMsg').style.display = "block";
     this.reset();
 });
+
+//Check whether the cafe is open or closed
+function showCafeStatus(){
+    const el = document.getElementById('cafe-status');
+    if(el){
+        const currentHour = new Date().getHours();
+        if(currentHour >=8 && currentHour<20){
+            el.innerHTML = "🟢Open Now";
+            el.style.color = "#2ec4b6";
+        }else{
+            el.innerHTML = "🔴Closed Now";
+            el.style.color = "#e71d36";
+        }
+    }
+} 
+// calling the function
+showCafeStatus();
