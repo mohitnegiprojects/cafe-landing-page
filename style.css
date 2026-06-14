@@ -80,6 +80,37 @@ nav ul li{
 body.night-mode #cafe-status{
     font-weight: bold;
 }
+ /* container to keep status and cart option*/
+.status-cart-container{
+    display: inline-flex;
+    align-items: center;
+    gap: 1100px;
+    margin: 10px;
+}
+#cart-btn{
+    text-decoration: none;
+    background-color: #baa187;
+    color: white !important;
+    padding:6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+ /*making it pop when hovered*/
+ #cart-btn:hover{
+    background-color: #a38970;
+    transform: scale(1.05);
+ }
+ /*adjustments for night mode*/
+ body.night-mode #cart-btn{
+    background-color: #4a3525;
+    border:1px solid #634832;
+    color: #f5ebe0;
+ }
+ body.night-mode #cart-btn:hover{
+ background-color: #634832;
+ }
 
 .hero{
     background-color: #f5efe6;
