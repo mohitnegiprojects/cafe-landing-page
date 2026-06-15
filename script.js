@@ -46,3 +46,26 @@ function showCafeStatus(){
 } 
 // calling the function
 showCafeStatus();
+
+//Auto rotating review 
+const reviews = [
+    {text: '“The product quality is consistently outstanding, exceeding my expectations every time.”',author: "-Andy"},
+    {text: '“I was completely impressed with their professionalism and customer service.”',author: "-Markus"},
+    {text: '“Their customer service is second to none.”',author: "-Chris"}
+];
+
+let currentReviewIndex = 0;
+function rotateReviews(){
+    const textEl = document.getElementById('review-text');
+    const authorEl = document.getElementById('review-author');
+    
+    if(textEl && authorEl){
+        //move to next review by moving to index 1
+        currentReviewIndex = (currentReviewIndex + 1)%reviews.length;
+        // Updation of HTML text properly 
+        textEl.textContent = reviews[currentReviewIndex].text;
+        authorEl.textContent = reviews[currentReviewIndex].author;
+    }
+}
+// Now, We call our function every 4000 ms by using setInterval
+setInterval(rotateReviews,4000);
