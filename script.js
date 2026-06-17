@@ -69,3 +69,27 @@ function rotateReviews(){
 }
 // Now, We call our function every 4000 ms by using setInterval
 setInterval(rotateReviews,4000);
+
+// cart working
+let cart = [];
+const cartCount = document.getElementById('cartCount');
+
+document.querySelectorAll('.add-to-cart').forEach(function(button){
+    button.addEventListener('click',function(){
+        const name = this.getAttribute('data-name');
+        const price = this.getAttribute('data-price');
+
+        cart.push({name:name,price:price});
+        cartCount.textContent = cart.length;
+
+        // for visual feedback on cart button
+        this.textContent = 'Added✅';
+        this.style.backgroundColor = '#28a745';
+
+        const btn = this;
+        setTimeout(function(){
+            btn.textContent = 'Add to Cart';
+            btn.style.backgroundColor = '#e8b86d';
+        },2000);
+    });
+});

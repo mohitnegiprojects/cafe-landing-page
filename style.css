@@ -1,5 +1,5 @@
-body{
-    background-color:bisque;
+ body{
+   background-color:bisque;
     font-size:large;
 }
 *{
@@ -87,7 +87,7 @@ body.night-mode #cafe-status{
     gap: 1100px;
     margin: 10px;
 }
-#cart-btn{
+#cartBtn{
     text-decoration: none;
     background-color: #baa187;
     color: white !important;
@@ -98,7 +98,7 @@ body.night-mode #cafe-status{
     transition: transform 0.2s, background-color 0.2s;
 }
  /*making it pop when hovered*/
- #cart-btn:hover{
+ #cartBtn:hover{
     background-color: #a38970;
     transform: scale(1.05);
  }
@@ -173,6 +173,20 @@ body.night-mode #cafe-status{
 }
 .menu-item p{
     color: #666;
+}
+.add-to-cart {
+    background-color: #e8b86d;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.add-to-cart :hover{
+    background-color: #d4a355;
 }
 
 
