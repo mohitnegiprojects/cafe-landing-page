@@ -93,3 +93,18 @@ document.querySelectorAll('.add-to-cart').forEach(function(button){
         },2000);
     });
 });
+
+//Menu Search Button
+document.getElementById('menuSearch').addEventListener('input',function(){
+    const searchTerm = this.value.toLowerCase().trim();
+    document.querySelectorAll('.menu-item').forEach(function(item){
+        const heading = item.querySelector('h3') || item.querySelector('h4') || item.querySelector('p');
+        if(!heading) return;
+        const name = heading.textContent.toLowerCase();
+        if(searchTerm === '' || name.includes(searchTerm)){
+            item.style.display = 'block'
+        }else{
+            item.style.display = 'none';
+    }
+  });
+});
