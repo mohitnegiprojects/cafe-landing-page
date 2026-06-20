@@ -108,3 +108,50 @@ document.getElementById('menuSearch').addEventListener('input',function(){
     }
   });
 });
+
+//Modal OverView
+window.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('quickview-modal');
+    const closeModalBtn = document.querySelector('.close-modal');
+    const menuCardsList = document.querySelectorAll('.menu-item');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDesc = document.getElementById('modal-desc');
+
+    // Make sure all elements exist before adding logic
+    if (modal && menuCardsList.length > 0) {
+        menuCardsList.forEach(card => {
+            // Change cursor to pointer so users know it's clickable
+            card.style.cursor = 'pointer';
+
+            card.addEventListener('click', (e) => {
+                // Finding the h3 heading inside the clicked card safely
+                const heading = card.querySelector('h3');
+                if (heading) {
+                    const drinkName = heading.textContent;
+                    
+                    // Update the text dynamically inside the pop-up box
+                    modalTitle.textContent = drinkName;
+                    modalDesc.textContent = `Our premium Americano is handcrafted fresh by our baristas using custom roasted beans and premium ingredients.`;
+                    
+                    // Display the modal block overlay
+                    modal.style.display = 'flex';
+                }
+            });
+        });
+    }
+
+    // Close modal when clicking the 'X'
+    if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    }
+
+    // Close modal if user clicks anywhere outside the actual box
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+//Tagline for all items are same, function will be required for each. 
