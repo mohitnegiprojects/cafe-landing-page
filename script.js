@@ -131,7 +131,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     
                     // Update the text dynamically inside the pop-up box
                     modalTitle.textContent = drinkName;
-                    modalDesc.textContent = `Our premium Americano is handcrafted fresh by our baristas using custom roasted beans and premium ingredients.`;
+                    modalDesc.textContent = `Our premium Coffee  is handcrafted fresh by our baristas using custom roasted beans and premium ingredients.`;
                     
                     // Display the modal block overlay
                     modal.style.display = 'flex';
